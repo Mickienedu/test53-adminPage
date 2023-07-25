@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <!-- <script src="fontawesome-free-6.3.0-web/js/all.min.js"></script> -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+
+</head>
+<body>
+    <!-- sidebar starts here -->
+    <section id="menu">
+
+        <div class="logo">
+            <img src="image/request.png">
+            <h2>Dynamic</h2>
+        </div>
+        <div class="items">
+            <li><i class="fas fa-dashboard" style="color: white;"></i><a href="index.html" style="color: white;"> Dashboard</a></li>
+            <li><i class="fab fa-uikit " style="color: white;"></i><a href="element.html"> Elements</a></li>
+            <li><i class="fas fa-th-large " style="color: white;"></i><a href="#"> Labels</a></li>
+            <li><i class="fas fa-edit" style="color: white;"></i><a href="#"> Forms</a></li>
+            <li><i class="fab fa-cc-visa" style="color: white;"></i><a href="#"> Cards</a></li>
+            <li><i class="fas fa-hamburger" style="color: white;"></i><a href="#"> Modal</a></li>
+            <li><i class="fas fa-chart-line" style="color: white;"></i><a href="#"> Blank</a></li>
+        </div>
+    </section>
+    <!-- sidebar ends here -->
+    <section id="interface">
+        <div class="allNav">
+            <div class="n1">
+                <div>
+                    <i id="menu-btn" class="fas fa-bars"></i>
+                </div>
+                <div class="search">
+                    <i class="fas fa-search"></i>
+                    <input type="text"  id="myInput" onkeyup="myFunction()" name="text" placeholder="Search">
+                </div>
+            </div>
+            <div class="profile">
+                <i class="far fa-bell"></i>
+                <img src="image/beyonce.png" >
+            </div>
+        </div>
+        <h3 class="i-name">
+            Dashboard
+        </h3>
+        <div class="values">
+            <div class="val-box">
+                <i class="fas fa-users"></i>
+                <div>
+                    <h3>8,267</h3>
+                    <span>New users</span>
+                </div>
+            </div>
+            <div class="val-box">
+                <i id="scart" class="fas fa-shopping-cart"></i>
+                <div>
+                    <h3>200,267</h3>
+                    <span>Total Orders</span>
+                </div>
+            </div>
+            <div class="val-box">
+                <i class="fas fa-store"></i>
+                <div>
+                    <h3>215,267</h3>
+                    <span>Product Sell</span>
+                </div>
+            </div>
+            <div class="val-box">
+                <i class="fas fa-dollar-sign"></i>
+                <div>
+                    <h3>$666,267</h3>
+                    <span>This Month</span>
+                </div>
+            </div>
+        </div>
+        <div class="board">
+            <table width="100%" id="myTable">
+                <thead>
+                    <tr>
+                        <td>Name</td>
+                        <td>Title</td>
+                        <td>status</td>
+                        <td>role</td>
+                        <td></td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="people">
+                            <img src="image/human-musik1.png" alt="">
+                            <div class="people-de">
+                                <h5>Joan Doe</h5>
+                                <p>joan@gmail.com</p>
+                            </div>
+                        </td>
+                        <td class="peaople-des">
+                            <h5>Software engineer</h5>
+                            <p>web dev</p>
+                        </td>
+                        <td class="active"><p>Active</p></td>
+                        <td class="role">
+                            <p>Owner</p>
+                        </td>
+                        <td class="edit"><a href="#">Edit</a></td>
+                    </tr>
+                    <tr>
+                        <td class="people">
+                            <img src="image/mickie-cap.png" alt="">
+                            <div class="people-de">
+                                <h5>Bod Lashley</h5>
+                                <p>lashley200@gmail.com</p>
+                            </div>
+                        </td>
+                        <td class="peaople-des">
+                            <h5>Data Analysis</h5>
+                            <p>Data Cat</p>
+                        </td>
+                        <td class="active"><p>Active</p></td>
+                        <td class="role">
+                            <p>Owner</p>
+                        </td>
+                        <td class="edit"><a href="#">Edit</a></td>
+                    </tr>
+                    <tr>
+                        <td class="people">
+                            <img src="image/nickie.png" alt="">
+                            <div class="people-de">
+                                <h5>Paulson Nelly</h5>
+                                <p>nell89@gmail.com</p>
+                            </div>
+                        </td>
+                        <td class="peaople-des">
+                            <h5>Mechanical engineer</h5>
+                            <p>Auto Fix</p>
+                        </td>
+                        <td class="active"><p>Active</p></td>
+                        <td class="role">
+                            <p>Owner</p>
+                        </td>
+                        <td class="edit"><a href="#">Edit</a></td>
+                    </tr>
+                    <tr>
+                        <td class="people">
+                            <img src="image/black2.jpg" alt="">
+                            <div class="people-de">
+                                <h5>Bryan Ike</h5>
+                                <p>ikeson@gmail.com</p>
+                            </div>
+                        </td>
+                        <td class="peaople-des">
+                            <h5>Software engineer</h5>
+                            <p>web dev</p>
+                        </td>
+                        <td class="active"><p>Active</p></td>
+                        <td class="role">
+                            <p>Owner</p>
+                        </td>
+                        <td class="edit"><a href="#">Edit</a></td>
+                    </tr>
+                    <tr>
+                        <td class="people">
+                            <img src="image/black1.jpg" alt="">
+                            <div class="people-de">
+                                <h5>Benson Chak</h5>
+                                <p>johnben@gmail.com</p>
+                            </div>
+                        </td>
+                        <td class="peaople-des">
+                            <h5>Creative Writer</h5>
+                            <p>Ghost Writer</p>
+                        </td>
+                        <td class="active"><p>Active</p></td>
+                        <td class="role">
+                            <p>Owner</p>
+                        </td>
+                        <td class="edit"><a href="#">Edit</a></td>
+                    </tr>
+                    <tr>
+                        <td class="people">
+                            <img src="image/Change User_64px.png" alt="">
+                            <div class="people-de">
+                                <h5>Baba Suwes</h5>
+                                <p>babadbaba@gmail.com</p>
+                            </div>
+                        </td>
+                        <td class="peaople-des">
+                            <h5>UI/UX</h5>
+                            <p>Creative UI/UX</p>
+                        </td>
+                        <td class="active"><p>Active</p></td>
+                        <td class="role">
+                            <p>Owner</p>
+                        </td>
+                        <td class="edit"><a href="#">Edit</a></td>
+                    </tr>
+                    <tr>
+                        <td class="people">
+                            <img src="image/human-musik3.jpg" alt="">
+                            <div class="people-de">
+                                <h5>Boloz Tim STO</h5>
+                                <p>stotim@gmail.com</p>
+                            </div>
+                        </td>
+                        <td class="peaople-des">
+                            <h5>Software engineer</h5>
+                            <p>Fullstack</p>
+                        </td>
+                        <td class="active"><p>Active</p></td>
+                        <td class="role">
+                            <p>Owner</p>
+                        </td>
+                        <td class="edit"><a href="#">Edit</a></td>
+                    </tr>
+                    <tr>
+                        <td class="people">
+                            <img src="image/black6.png" alt="">
+                            <div class="people-de">
+                                <h5>Okafor Jeremiah</h5>
+                                <p>okojen@gmail.com</p>
+                            </div>
+                        </td>
+                        <td class="peaople-des">
+                            <h5>Project Manager</h5>
+                            <p>Project Organiser</p>
+                        </td>
+                        <td class="active"><p>Active</p></td>
+                        <td class="role">
+                            <p>Owner</p>
+                        </td>
+                        <td class="edit"><a href="#">Edit</a></td>
+                    </tr>
+                    <tr>
+                        <td class="people">
+                            <img src="image/black7.jpg" alt="">
+                            <div class="people-de">
+                                <h5>Chioma Chimdumaga</h5>
+                                <p>chiomachim@gmail.com</p>
+                            </div>
+                        </td>
+                        <td class="peaople-des">
+                            <h5>Frontend</h5>
+                            <p>web dev</p>
+                        </td>
+                        <td class="active"><p>Active</p></td>
+                        <td class="role">
+                            <p>Owner</p>
+                        </td>
+                        <td class="edit"><a href="#">Edit</a></td>
+                    </tr>
+                    <tr>
+                        <td class="people">
+                            <img src="image/menpose1.png" alt="">
+                            <div class="people-de">
+                                <h5>Ola Great Abdul</h5>
+                                <p>abdulazeezog@gmail.com</p>
+                            </div>
+                        </td>
+                        <td class="peaople-des">
+                            <h5>Project Executor</h5>
+                            <p>Inspectionist</p>
+                        </td>
+                        <td class="active"><p>Active</p></td>
+                        <td class="role">
+                            <p>Owner</p>
+                        </td>
+                        <td class="edit"><a href="#">Edit</a></td>
+                    </tr>
+                    <tr>
+                        <td class="people">
+                            <img src="image/uba-seventh-img.jpg" alt="">
+                            <div class="people-de">
+                                <h5>Benards Ike</h5>
+                                <p>ikben@gmail.com</p>
+                            </div>
+                        </td>
+                        <td class="peaople-des">
+                            <h5>Software engineer</h5>
+                            <p>Jnr Fullstack/p>
+                        </td>
+                        <td class="active"><p>Active</p></td>
+                        <td class="role">
+                            <p>Owner</p>
+                        </td>
+                        <td class="edit"><a href="#">Edit</a></td>
+                    </tr>
+                    <tr>
+                        <td class="people">
+                            <img src="image/menpose2.webp" alt="">
+                            <div class="people-de">
+                                <h5>Kelvin Alli</h5>
+                                <p>vinalli@gmail.com</p>
+                            </div>
+                        </td>
+                        <td class="peaople-des">
+                            <h5>App Dev</h5>
+                            <p>Flutter Expert</p>
+                        </td>
+                        <td class="active"><p>Active</p></td>
+                        <td class="role">
+                            <p>Owner</p>
+                        </td>
+                        <td class="edit"><a href="#">Edit</a></td>
+                    </tr>
+                    <tr>
+                        <td class="people">
+                            <img src="image/black5.jpg" alt="">
+                            <div class="people-de">
+                                <h5>Cherry Z. Campbell</h5>
+                                <p>campzum@gmail.com</p>
+                            </div>
+                        </td>
+                        <td class="peaople-des">
+                            <h5>Mobile Dev</h5>
+                            <p>Phone engineer</p>
+                        </td>
+                        <td class="active"><p>Active</p></td>
+                        <td class="role">
+                            <p>Owner</p>
+                        </td>
+                        <td class="edit"><a href="#">Edit</a></td>
+                    </tr>
+                    <tr>
+                        <td class="people">
+                            <img src="image/black4.jpg" alt="">
+                            <div class="people-de">
+                                <h5>Muhammed Alhilah</h5>
+                                <p>mohilah@gmail.com</p>
+                            </div>
+                        </td>
+                        <td class="peaople-des">
+                            <h5>Machine Learning</h5>
+                            <p>Machine Learning</p>
+                        </td>
+                        <td class="active"><p>Active</p></td>
+                        <td class="role">
+                            <p>Owner</p>
+                        </td>
+                        <td class="edit"><a href="#">Edit</a></td>
+                    </tr>
+                    <tr>
+                        <td class="people">
+                            <img src="image/black3.jpg" alt="">
+                            <div class="people-de">
+                                <h5>Odogwu Guy</h5>
+                                <p>odg@gmail.com</p>
+                            </div>
+                        </td>
+                        <td class="peaople-des">
+                            <h5>Artificial Inteligence</h5>
+                            <p>AI</p>
+                        </td>
+                        <td class="active"><p>Active</p></td>
+                        <td class="role">
+                            <p>Owner</p>
+                        </td>
+                        <td class="edit"><a href="#">Edit</a></td>
+                    </tr>
+                    <tr>
+                        <td class="people">
+                            <img src="image/mickie-jeanjacket.png" alt="">
+                            <div class="people-de">
+                                <h5>Obinna Azubike</h5>
+                                <p>azul300@gmail.com</p>
+                            </div>
+                        </td>
+                        <td class="peaople-des">
+                            <h5>Constructor</h5>
+                            <p>Project Cons</p>
+                        </td>
+                        <td class="active"><p>Active</p></td>
+                        <td class="role">
+                            <p>Owner</p>
+                        </td>
+                        <td class="edit"><a href="#">Edit</a></td>
+                    </tr>
+                    <tr>
+                        <td class="people">
+                            <img src="image/mickie-jersey.png" alt="">
+                            <div class="people-de">
+                                <h5>Michael Chinedu</h5>
+                                <p>mickienedu@gmail.com</p>
+                            </div>
+                        </td>
+                        <td class="peaople-des">
+                            <h5>Software Dev</h5>
+                            <p>Frontend Dev</p>
+                        </td>
+                        <td class="active"><p>Active</p></td>
+                        <td class="role">
+                            <p>Owner</p>
+                        </td>
+                        <td class="edit"><a href="#">Edit</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+    <script src="main.js"></script>
+    <script>
+        $('#menu-btn').click(function() {
+            $('#menu').toggleClass("active");
+        })
+    </script>
+</body>
+</html>
